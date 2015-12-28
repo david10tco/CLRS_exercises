@@ -1,0 +1,31 @@
+//Linear Search
+//Looks at every element until it finds the search term
+
+import java.util.*;
+
+public class linear_search{
+  public static void main(String [] args){
+    int[] input = {3,1,4,6,2,10,5,8,7};
+    int i = -1;
+    int found = 0;
+    int searchFor = 9;
+
+    for (int j=0; j<input.length; j++){
+      i++;
+      if(input[i] == searchFor){
+         System.out.println(i);
+         found = 1;
+      } else {
+        ;
+      }
+    }
+
+    if (found == 0){
+      System.out.println("Not Found");
+    } else {
+      ;
+    }
+
+
+  }
+}
