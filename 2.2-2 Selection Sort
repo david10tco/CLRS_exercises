@@ -7,7 +7,8 @@ public class selectionSort{
   public static void main(String [] args){
     int[] A = {3,1,4,6,2,10,5,8,7};
 
-    for (int j = 0; j<A.length; j++){
+    //A.length -1 because the last value will always swop with itself, thus no need to run
+    for (int j = 0; j<A.length -1; j++){
       //search for smallest value. Assume largest value is 99
       int smallest_value = 99;
       int smallest_index = -1;
