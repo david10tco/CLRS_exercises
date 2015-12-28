@@ -1,0 +1,39 @@
+//Finds the smallest value in the array and swops with A[0].
+//Continue sorting by finding next smallest, swop with A[1] and so on.
+
+import java.util.*;
+
+public class selectionSort{
+  public static void main(String [] args){
+    int[] A = {3,1,4,6,2,10,5,8,7};
+
+    for (int j = 0; j<A.length; j++){
+      //search for smallest value. Assume largest value is 99
+      int smallest_value = 99;
+      int smallest_index = -1;
+
+      for (int i = j; i<A.length; i++){
+        if (A[i] < smallest_value){
+          smallest_value = A[i];
+          smallest_index = i;
+        } else {
+          ;
+        }
+      }
+      //swop the smallest value with A[j]
+      int temp = A[j];
+      A[j] = A[smallest_index];
+      A[smallest_index] = temp;
+    }
+    printArray(A);
+  }
+
+  public static void printArray(int[] a){
+    for (int i = 0; i<a.length; i++){
+      System.out.print(a[i] + " ");
+
+    }
+
+  }
+
+}
